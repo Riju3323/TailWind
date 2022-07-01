@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.dang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strawberry {
+  width: 100%;
+  min-width: 10em;
+  height: 27em;
+  min-height: 20em;
+}
+
+.heroice {
+  height: fit-content;
+  width: fit-content;
+}
+
+.botlogo {
+  height: 40px;
+  width: 40px;
+}
+
+h3 {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(rgb(184, 99, 51), rgb(46, 44, 44));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(rgb(88, 25, 148), rgb(22, 22, 21));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.buttonuno {
+  border-width: 2px;
+  border-color: black;
+  color: black;
+  align-items: center;
+  padding: 3px 5px;
+  margin-bottom: 4px;
+}
+
+.buttondos {
+  border-width: 2px;
+  border-color: black;
+  color: black;
+  align-items: center;
+  padding: 3px 6px;
+  margin-bottom: 4px;
+}
+
+.buttondos:hover {
+  color: brown;
+  transform: scale(0.9);
+  transition-duration: 400ms;
+  border-color: chocolate;
+}
+
+.buttonuno:hover {
+  color: brown;
+  transform: scale(0.9);
+  transition-duration: 400ms;
+  border-color: chocolate;
+}
+
+.lowersubmit {
+  border-width: 2px;
+  border-color: black;
+  padding: 6px 2px;
+  color: rgb(31, 29, 29);
+  font-weight: 500;
+}
+
+.zoompanel {
+  transition: box-shadow 1s;
+  box-shadow: 0 0 3px #515151;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.zoompanel::after {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+}
+
+.zoompanel:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.zoompanel:hover::after {
+    opacity: 1;
+}

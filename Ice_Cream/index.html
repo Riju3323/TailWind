@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Cream Store</title>
+  <link rel="stylesheet" href="./css/output.css" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-orange-50">
+<!-- Main Nav Bar -->  
+  <div class="container mx-auto p-5 bg-orange-50">
+    <div class="md:flex md:flex-row md:justify-between text-center text-sm sm:text-base">
+      <div class="flex flex-row justify-center items-center pb-4">
+        <div class="bg-gradient-to-r from-yellow-500 to-red-600 w-12 h-12 rounded-md flex justify-center items-center border-2 border-red-900">
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 443.65 443.65" style="enable-background:new 0 0 443.65 443.65;" xml:space="preserve" width="512" height="512">
+            <g>
+              <polygon style="fill:#F7B239;" points="342.088,137.774 331.228,184.154 323.288,184.154 267.888,184.154 267.888,137.774    329.508,137.774  "/>
+              <path style="fill:#F95428;" d="M331.458,117.134c0,7.06-0.67,13.96-1.95,20.64h-61.62h-39h-114.75   c-1.28-6.68-1.95-13.58-1.95-20.64c0-60.55,49.09-109.63,109.64-109.63S331.458,56.584,331.458,117.134z"/>
+              <path style="fill:#E54728;" d="M247.328,10.491c-8.183-1.949-16.72-2.988-25.5-2.988c-60.55,0-109.64,49.08-109.64,109.63   c0,7.06,0.67,13.96,1.95,20.64h51c-1.28-6.68-1.95-13.58-1.95-20.64C163.188,65.364,199.076,21.985,247.328,10.491z"/>
+              <path style="fill:#F7B239;" d="M323.288,184.154l-101.46,252l-101.46-252h108.52v11.12c0,10.77,8.73,19.5,19.5,19.5   c5.38,0,10.26-2.18,13.79-5.71s5.71-8.41,5.71-13.79v-11.12H323.288z"/>
+              <path style="fill:#F95428;" d="M267.888,184.154v11.12c0,5.38-2.18,10.26-5.71,13.79s-8.41,5.71-13.79,5.71   c-10.77,0-19.5-8.73-19.5-19.5v-11.12v-46.38h39V184.154z"/>
+              <polygon style="fill:#F7B239;" points="228.888,137.774 228.888,184.154 120.368,184.154 112.418,184.154 101.558,137.774    114.138,137.774  "/>
+              <polygon style="fill:#E09B2D;" points="221.828,436.154 191.828,184.094 120.368,184.154  "/>
+              <polygon style="fill:#E09B2D;" points="101.558,137.774 112.418,184.154 164.828,184.094 155.828,138.094  "/>
+              <path style="fill:#FFFFFF;" d="M236.763,344.973c-0.932,0-1.88-0.175-2.798-0.544c-3.843-1.547-5.703-5.916-4.156-9.759   l42.723-106.112c1.546-3.841,5.913-5.705,9.758-4.156c3.843,1.547,5.703,5.916,4.156,9.759l-42.723,106.112   C242.546,343.197,239.734,344.973,236.763,344.973z"/>
+              <path style="fill:#FFFFFF;" d="M308.425,122.27c-4.049,0-7.384-3.226-7.493-7.298c-0.898-33.366-22.855-62.744-54.637-73.103   c-3.938-1.284-6.09-5.517-4.807-9.455c1.284-3.938,5.518-6.089,9.455-4.807c37.8,12.32,63.914,47.268,64.982,86.961   c0.111,4.141-3.154,7.587-7.295,7.699C308.562,122.269,308.493,122.27,308.425,122.27z"/>
+              <circle style="fill:#FFFFFF;" cx="288.823" cy="207.057" r="7.5"/>
+              <circle style="fill:#FFFFFF;" cx="221.974" cy="30.732" r="7.5"/>
+              <path style="fill:#333333;" d="M347.967,133.11c-1.423-1.794-3.587-2.84-5.877-2.84h-3.87c0.488-4.353,0.74-8.746,0.74-13.14   C338.96,52.544,286.416,0,221.83,0c-64.591,0-117.14,52.544-117.14,117.13c0,4.393,0.252,8.787,0.74,13.14h-3.871   c-2.29,0-4.454,1.046-5.877,2.84s-1.947,4.14-1.426,6.37l10.86,46.38c0.795,3.392,3.819,5.79,7.303,5.79h2.885l99.568,247.301   c1.143,2.839,3.896,4.699,6.957,4.699s5.814-1.86,6.957-4.699l99.568-247.301h2.874c3.483,0,6.508-2.398,7.303-5.79l10.86-46.38   C349.914,137.25,349.39,134.905,347.967,133.11z M221.83,15c56.314,0,102.13,45.815,102.13,102.13c0,4.399-0.282,8.799-0.842,13.14   H267.89c-4.143,0-7.5,3.358-7.5,7.5v57.5c0,6.617-5.383,12-12,12s-12-5.383-12-12v-57.5c0-4.142-3.357-7.5-7.5-7.5H120.532   c-0.56-4.342-0.842-8.741-0.842-13.14C119.691,60.815,165.51,15,221.83,15z M111.019,145.27H221.39v31.38H118.366L111.019,145.27z    M221.83,416.069L131.475,191.65h89.915v3.62c0,14.888,12.112,27,27,27s27-12.112,27-27v-3.62h36.796L221.83,416.069z    M325.283,176.65H275.39v-31.38h57.241L325.283,176.65z"/>
+            </g>            
+        </div>
+        <div class="flex flex-col justify-around items-center px-4">
+          <h1 class="text-3xl text-gray-600 ml-4 font-bold text-center mr-4">Nice Creame</h1>
+          <h4 class="italic">Even the names taste good</h4>
+      </div>
+      </div>
+      <div class="mt-2">
+        <a href="#" class="text-gray-800 hover:text-red-600 p-4 px-3 sm:px-4 text-lg font-bold">Home</a>
+        <a href="#" class="text-gray-800 hover:text-red-600 p-4 px-3 sm:px-4 text-lg font-bold">Explore</a>
+        <a href="#" class="text-gray-800 hover:text-red-600 p-4 px-3 sm:px-4 text-lg font-bold">More</a>
+        <a href="#" class="bg-gradient-to-r from-yellow-600 to-amber-700 text-gray-200 p-3 px-3 sm:px-5 rounded-full border-2 border-red-800 font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          Check Cart
+        </a>
+      </div>
+    </div>
+<!-- Hero Section -->
+    <div class="md:flex md:flex-row mt-20 justify-around ">
+      <div class="md:w-2/5 flex flex-col justify-center items-center dang">
+        <h2 class="font-serif text-5xl text-gray-600 mb-4 text-center">Chilled Delights!!</h2>
+        <p class="uppercase text-gray-600 tracking-wide text-center">Best Quality Ice Cream Delivered at your doorstep in minutes<br> **** </p>
+        <p class="uppercase text-gray-600 tracking-wide text-center">It is our anniversary week, enjoy upto <strong>50% discounts !!</strong><br> **** </p>
+        <a href="#" class="bg-gradient-to-r from-yellow-600 to-amber-700 rounded-full py-2 px-4 text-gray-200 uppercase text-xl my-5 border-2 border-orange-900">Order Now</a>
+      </div>
+      <div class="md:w-2/5 flex justify-center items-center">
+        <img src="./images/Choco Oreo Sundae.jpg" class="heroice" />
+      </div>
+    </div>
+<!-- Ice Cream Section -->
+    <div class="my-20">
+      <div class="flex flex-row justify-between my-5">
+        <h2 class="text-3xl">Popular Desserts</h2>
+        <a href="#" class="flex flex-row text-lg hover:text-yellow-700">
+          View More
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Brownie Kitkat Mousse.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Choco Karnival - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store A</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Caramel Cone.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Classic ButterScotch Cone - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store B</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Choco Cone.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Classic Choco Cone - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store Y</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Choco Vanilla Combo.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Choco Vanilla Combo - <s>6</s> 3$</a></h4>
+          <h4><a href="#">Store Z</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+
+<!-- Other Desserts -->
+    <div class="my-20">
+      <div class="flex flex-row justify-between my-5">
+        <h2 class="text-3xl">Newest Arrivals</h2>
+        <a href="#" class="flex flex-row text-lg hover:text-purple-700">
+          View More
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    <div class="grid grid-flow-row grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Cookie Overload.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Cookie Overload - <s>6</s> 3$ </a></h3>
+          <h4><a href="#">Store A</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Mango.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Classic Mango - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store B</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Triple Treat.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Triple Treat - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store Y</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadow-lg rounded-lg zoompanel">
+        <a href="#">
+          <img src="./images/Caramel Connection.jpg" class="rounded-tl-lg rounded-tr-lg" />
+        </a>
+        <div class="p-5">
+          <h3><a href="#">Caramel Collection - <s>6</s> 3$</a></h3>
+          <h4><a href="#">Store Z</a></h4>
+          <div class="flex flex-col xl:flex-row justify-between">
+            <a class=" rounded-full flex flex-row justify-center buttonuno  href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              Add to cart
+            </a>
+            <a class=" rounded-full flex flex-row justify-center buttondos" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              Customise
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> 
+<!-- Bottom Panel Section -->
+    <div class="shadow-lg my-20 flex flex-row">
+      <div class="lg:w-3/5 w-full bg-gradient-to-b from-red-300 via-orange-300 to-amber-500 text-gray-900 p-12 flex justify-center items-center">
+        <div class="lg:w-4/5">
+          <div >
+            <h2 class="text-2xl font-bold mb-4 text-center">Since It Is Your First Time Ordering From Us, <br> We have a special discount just for you</h2>
+            <p class="mb-4 text-2xl leading-relaxed text-center">Use Special Discount Code: <strong>"MyFirstNiceCream#2903409"</strong><br> for a 50% Discount and Free Delivery!!</p>
+          </div>
+          <div class="flex justify-center">
+            <button type="submit" class="rounded-lg w-1/5 lowersubmit bg-gradient-to-tl from-orange-900 to-amber-100">Go To Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden">
+        <img src="Images/StrawBerry Delight.jpg" class="h-96 strawberry">
+      </div>
+    </div>
+
+    <div class="border-t-2 border-gray-300 flex flex-col md:flex-row md:justify-between text-center py-5 text-sm">
+      <div class="mb-4">
+        <a href="#" class="mx-2.5">About Us</a>
+        <a href="#" class="mx-2.5">Contact Us</a>
+        <a href="#" class="mx-2.5">Terms of Services</a>
+      </div>
+      <div class="logodiv">
+        <svg class="botlogo" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </div>
+      <p>&copy; Copyright Reserved 2022</p>
+    </div><!-- Footer Section -->
+  </div>
+</body>
+</html>
